@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension xmlns="https://newrelic.com/docs/java/xsd/v1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="newrelic-extension extension.xsd" name="extension-example" version="1.0" enabled="true">
+  <instrumentation>
+    <pointcut transactionStartPoint="true" ignoreTransaction="false">
+      <nameTransaction/>
+      <methodAnnotation>br.com.caelum.vraptor.Put</methodAnnotation>
+    </pointcut>
+    <pointcut transactionStartPoint="true" ignoreTransaction="false">
+      <nameTransaction/>
+      <methodAnnotation>br.com.caelum.vraptor.Post</methodAnnotation>
+    </pointcut>
+    <pointcut transactionStartPoint="true" ignoreTransaction="false">
+      <nameTransaction/>
+      <methodAnnotation>br.com.caelum.vraptor.Delete</methodAnnotation>
+    </pointcut>
+    <pointcut transactionStartPoint="true" ignoreTransaction="false">
+      <nameTransaction/>
+      <methodAnnotation>br.com.caelum.vraptor.Get</methodAnnotation>
+    </pointcut>
+    <pointcut transactionStartPoint="true" ignoreTransaction="false">
+      <nameTransaction/>
+      <methodAnnotation>br.com.caelum.vraptor.Patch</methodAnnotation>
+    </pointcut>
+  </instrumentation>
+</extension>
